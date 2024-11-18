@@ -4,7 +4,7 @@
 <p align="center"> Authors: Doha Ibrahim, Salma Abdelrahem, Mohamed Tarek, and Ahmed Gomaa. </p>
  
 <p align="center"> 
-<img src= "6-pbr.png"> 
+<img src= "GUI pic.png"> 
 </p>
 
 Welcome to the Customized AI Data Analysis App for the DIY Smart Crude Extractor!
