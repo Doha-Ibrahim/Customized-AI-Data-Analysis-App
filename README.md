@@ -27,68 +27,83 @@ Simple interface with a chat-like display for AI responses. Easily input data to
 ### 5. **Customizable & Extendable:**
 Open to modifications, allowing integration of additional sensors, AI models, or specific compound databases to extend functionality.
 
-## Installation:
+## Installation
 
-1. Clone the repository:
+1. **Clone the repository**:
+   - First, clone the project repository to your local machine using the following command:
+     ```bash
+     git clone https://github.com/Doha-Ibrahim/Customized-AI-Data-Analysis-App.git
+     ```
 
-   ```bash
-   git clone https://github.com/Doha-Ibrahim/Customized-AI-Data-Analysis-App.git
-   cd customized-phi3-project
-   ```
+### Instructions for Users
 
-2. Install the required dependencies:
+1. **Install Ollama**:  
+   - Go to the [Ollama download page](https://ollama.com/download), download the appropriate version for your operating system, and follow the installation steps.
+   
+2. **Install Required Libraries**:  
+   - After installing Ollama, open a terminal (command prompt, PowerShell, or terminal on Linux/macOS) and run:
+     ```bash
+     pip install ollama
+     ```
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+3. **Run Pre-Trained Models**:  
+   - Use the following commands to run **Llama3** or **Phi3 Mini**:
+     ```bash
+     ollama run llama3
+     ```
+     and
+     ```bash
+     ollama run phi3
+     ```
 
-3. Run the application:
+4. **Run Customized AI Model (`my-analyst`)**:
+   - First, create the custom model by running:
+     ```bash
+     ollama create my-analyst -f My-model.md
+     ```
+   - Then, run the model with:
+     ```bash
+     ollama run my-analyst
+     ```
+   - Finally, start the server for real-time AI interaction:
+     ```bash
+     ollama serve
+     ```
+## Running the application
 
-   ```bash
-   python main.py python src/main_code_v1.py
-   ```
-   # or
-   ```bash
-   python src/main_code_v2.py
-   ```
-   # or
-   ```bash
-   python src/main_code_v3.py
-   ```
+ 1. **Navigate to the Project Directory**:
+    - After cloning the repository, change into the project directory by running:
+      ```bash
+      cd Customized-AI-Data-Analysis-App
+      ```
+2. **Run the Application**:
+    - Once all previous steps are complete, you can now run the project. In the project directory, execute one of the following command to start the application:
+      
+      ```bash
+      python run_project.py
+      ```
+      or
+      ```bash
+      python src/main_code_v2.py
+      ```
+      or
+      ```bash
+      python src/main_code_v3.py
+      ```
+    - This will start the application, and you will be able to interact with the customized AI model and perform data analysis tasks.
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Getting Started
-
-Follow these steps to set up your RDI PhotoBioreactor:
-
-1. **Hardware Assembly:**
-   - Refer to the hardware documentation for assembling the bioreactor components.
-   - Ensure all connections are secure and follow safety guidelines.
-
-2. **Software Installation:**
-   - Clone this repository to your local machine.
-   - Install the required dependencies using the provided instructions.
-
-3. **Configuration:**
-   - Configure the AI model parameters and set up the chemostatic control settings.
-   - Adjust color sensing parameters based on your experiment requirements.
-
-4. **Run the Experiment:**
-   - Execute the provided scripts to start the experiment.
-   - Monitor the real-time data and visualize the results.
 
 ## Contribution and Collaboration:
 
 We invite the community to contribute to the development of this customized AI-based data analysis app for the smart crude extractor. Whether you're skilled in data analysis, machine learning, or sensor technologies, your contributions are invaluable. Feel free to submit issues, pull requests, track bugs, or join discussions to help improve the prediction models and enhance the overall system. Together, we can enhance the system’s ability to analyze extraction data and predict bioactive compounds more accurately.
 
-## Link to pre-print: 
-
 ## Acknowledgments
 
 We gratefully acknowledge the open-source communities whose tools and resources supported the development of this project.
 
-# Contributors
+## Contributors
 Doha Ibrahim, 
 Salma Abdelrahem, and
 Mohamed Tarek.
