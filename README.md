@@ -80,15 +80,15 @@ Open to modifications, allowing integration of additional sensors, AI models, or
     - Once all previous steps are complete, you can now run the project. In the project directory, execute one of the following command to start the application:
       
       ```bash
-      python run_project.py
+      python GUI_Chatting.py
       ```
       or
       ```bash
-      python src/main_code_v2.py
+      python GUI_Entering_Values_Bottom.py
       ```
       or
       ```bash
-      python src/main_code_v3.py
+      python GUI_Entering_Values_Top.py
       ```
     - This will start the application, and you will be able to interact with the customized AI model and perform data analysis tasks.
 
